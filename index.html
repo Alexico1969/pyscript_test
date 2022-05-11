@@ -16,7 +16,19 @@
 <body>
     <div class="header"></div>
     <py-script class="pyscript"> 
-print('Hello, World!') 
+print('Hello, World!')
+
+class Car():
+    def __init__(self,brand="", type=""):
+        self.brand = brand
+        self.type = type
+
+    def __str__(self):
+        return f"Your car is a {self.brand} of type {self.type}"
+
+my_car = Car("Mercedes", "C150")
+print(my_car)
+
 </py-script>
 </body>
 </html>
